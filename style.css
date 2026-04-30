@@ -74,9 +74,7 @@ img {
     color: var(--accent-color) !important;
 }
 
-.bg-beige .text-accent, .bg-taupe .text-accent {
-    color: #99732d !important; /* Darker gold for better contrast on light bg */
-}
+/* Removido o escurecimento automático para manter padrão #D9AD5B */
 
 @media (max-width: 768px) {
     .section-title { font-size: 1.75rem; }
@@ -112,6 +110,8 @@ img {
 
 @media (max-width: 768px) {
     .section-padding { min-height: auto !important; padding: 60px 0; }
+    .section-title { font-size: 1.625rem !important; }
+    p { font-size: 1rem !important; }
 }
 
 /* HERO SECTION */
@@ -167,6 +167,8 @@ img {
         min-height: 100vh;
     }
     .hero-grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 1.625rem !important; line-height: 1.2; }
+    .hero p { font-size: 1rem !important; }
     .hero-content { text-align: left; }
     .hero-spacer { display: none; }
 }
@@ -430,4 +432,36 @@ footer {
     padding: var(--space-xl) 0; 
     background-color: var(--dark-accent); 
     text-align: center; 
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+footer img {
+    width: 120px;
+    margin: 0 auto 1.5rem;
+    display: block;
+    opacity: 0.9;
+}
+
+footer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.footer-copy {
+    opacity: 0.6;
+    font-size: 0.9rem;
+}
+
+.footer-links {
+    margin-top: 1rem;
+    opacity: 0.4;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+    footer { padding: var(--space-md) 0; }
+    footer img { margin-bottom: 0.75rem; width: 80px; }
+    footer h2 { font-size: 1.1rem; margin-bottom: 0.3rem; }
+    .footer-links { margin-top: 0.5rem; }
 }
