@@ -110,6 +110,7 @@ img {
 
 @media (max-width: 768px) {
     .section-padding { min-height: auto !important; padding: 60px 0; }
+    .problem.section-padding { padding-top: 32px; } /* menos espaço após o hero */
     .section-title { font-size: 1.625rem !important; }
     p { font-size: 1rem !important; }
 }
@@ -352,6 +353,8 @@ img {
         grid-template-columns: 1fr !important; 
         gap: var(--space-lg); 
     }
+    .price-value { font-size: 2.8rem !important; }
+    .price-card { padding: var(--space-xl) 20px; } /* menos margem lateral no mobile */
 }
 
 /* FAQ SECTION */
