@@ -159,7 +159,7 @@ img {
     .hero {
         background: 
             linear-gradient(to bottom, rgba(242, 238, 235, 0) 0%, rgba(242, 238, 235, 0) 40%, #F2EEEB 60%),
-            url('hero-mobile-bg.png') no-repeat top center;
+            url('hero-mobile-bg.png') no-repeat 50% -100px;
         background-size: 100% auto;
         background-color: #F2EEEB;
         align-items: flex-start;
@@ -169,7 +169,7 @@ img {
     .hero-grid { grid-template-columns: 1fr; }
     .hero h1 { font-size: 1.625rem !important; line-height: 1.2; }
     .hero p { font-size: 1rem !important; }
-    .hero-content { text-align: left; }
+    .hero-content { text-align: center; padding: 0 20px; }
     .hero-spacer { display: none; }
 }
 
