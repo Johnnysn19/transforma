@@ -189,6 +189,7 @@ img {
 
 @media (max-width: 768px) {
     .arrow-grid { grid-template-columns: 1fr; }
+    .solution-statement { padding: 24px 8px; } /* Texto agora chega bem mais perto das laterais */
     .solution-statement h3 { font-size: 1.1rem; }
 }
 
