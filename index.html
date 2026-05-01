@@ -14,14 +14,17 @@
 
     <!-- 1. HEADLINE & SUBHEADLINE -->
     <section class="hero" id="home">
+        <!-- Estrutura de Imagem Hero Otimizada -->
+        <picture class="hero-bg-wrapper">
+            <source srcset="hero-mobile-bg.png" media="(max-width: 768px)">
+            <img src="hero-bg.png" alt="Ana Paula - Mentora Transforma" fetchpriority="high" class="hero-bg-img">
+        </picture>
+        
         <div class="container hero-grid">
             <div class="hero-content">
                 <h1>DESCUBRA COMO TRANSFORMAR SEU INSTAGRAM EM UMA <span class="text-accent">MÁQUINA DE VENDAS DIÁRIAS</span></h1>
                 <p>O método que transforma sua comunicação em influência, posicionamento e vendas — sem precisar se expor demais ou parecer forçada.</p>
                 <a href="#offer" class="btn">QUERO ME POSICIONAR E SER RECONHECIDA AGORA</a>
-            </div>
-            <div class="hero-spacer">
-                <!-- Espaço para a imagem da autora no background -->
             </div>
         </div>
     </section>
@@ -280,7 +283,7 @@
     <section class="author section-padding bg-navy">
         <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: var(--space-2xl);">
             <div class="author-image">
-                <img src="author-image.jpg" alt="Ana Paula" width="682" height="1024" style="width: 100%; max-width: 400px; display: block; margin: 0 auto; border-radius: var(--radius-xl); box-shadow: 0 20px 40px rgba(0,0,0,0.4);">
+                <img src="author-image.jpg" alt="Ana Paula" width="682" height="1024" loading="lazy">
             </div>
             <div class="author-content">
                 <h4 style="color: var(--accent-color); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem;">Muito prazer, eu sou a</h4>
@@ -298,7 +301,7 @@
     <!-- FOOTER -->
     <footer>
         <div class="container">
-            <img src="footer-logo.png" alt="Transforma Logo" width="799" height="677">
+            <img src="footer-logo.png" alt="Transforma Logo" width="150" height="127" loading="lazy">
             <h2>TRANSFORMA</h2>
             <p class="footer-copy">&copy; 2026 Ana Paula. Todos os direitos reservados.</p>
             <div class="footer-links">
