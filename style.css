@@ -163,14 +163,15 @@ img {
         background-size: 100% auto;
         background-color: #F2EEEB;
         align-items: flex-start;
-        padding-top: 50vh; /* Posição compacta */
+        padding-top: 42vh; /* Posição compacta */
         min-height: 100vh;
     }
     .hero-grid { grid-template-columns: 1fr; }
     .hero h1 { font-size: 1.625rem !important; line-height: 1.2; }
     .hero p { font-size: 1rem !important; }
-    .hero-content { text-align: center; padding: 0 20px; }
+    .hero-content { text-align: center; padding: 0; }
     .hero-spacer { display: none; }
+    .hero .container { padding: 0 12px; }
 }
 
 /* PROBLEM SECTION */
@@ -187,6 +188,7 @@ img {
 
 @media (max-width: 768px) {
     .arrow-grid { grid-template-columns: 1fr; }
+    .solution-statement h3 { font-size: 1.1rem; }
 }
 
 .arrow-card {
